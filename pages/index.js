@@ -45,6 +45,9 @@ export default function Home() {
                 priority
               />
             </Box>
+            <Typography variant="subtitle">
+              index.js is a specially name page. It is your home page.
+            </Typography>
             <Typography>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
               nulla ligula. Aliquam fringilla risus a sapien laoreet, ac

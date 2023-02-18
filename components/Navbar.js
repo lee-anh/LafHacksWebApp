@@ -14,10 +14,9 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import CodeIcon from "@mui/icons-material/Code";
 
-// TODO: Avatar should be user, will have to make dynamic
 // TODO: Classes and Assignment don't have corresponding pages yet
-const pages = ["Home", "Our Team", "Potato", "Test"];
-const links = ["/", "/team", "/potato", "/test"];
+const pages = ["Home", "Our Team", "Potato"];
+const links = ["/", "/team", "/potato"];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);

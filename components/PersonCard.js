@@ -1,3 +1,4 @@
+import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -12,28 +13,28 @@ import Typography from "@mui/material/Typography";
 // imageSource
 // classYear
 // major
-export default function PersonCard(props) {
+// I've used destructuring to show the props we are expecting
+export default function PersonCard({ name, classYear, major }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="../public/hello_kitty.png"
-        title={props.name}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {props.name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Class Year: {props.classYear}
-        </Typography>
-        <Typography variant="body2">Major: {props.major}</Typography>
-      </CardContent>
+    <>
+      <Box my={2}>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Class Year: {classYear}
+            </Typography>
+            <Typography variant="body2">Major: {major}</Typography>
+          </CardContent>
 
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
+      </Box>
+    </>
   );
 }

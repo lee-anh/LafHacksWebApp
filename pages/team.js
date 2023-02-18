@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 import { useState } from "react";
 
@@ -11,7 +12,9 @@ import Typography from "@mui/material/Typography";
 import Layout from "../components/Layout";
 import PersonCard from "../components/PersonCard";
 
-import HelloKitty from "../public/hello_kitty.png";
+// import HelloKitty from "../public/hello_kitty.png";
+//import HelloKitty from "../public/LafHacksLogo.png";
+import LafHacksLogo from "../public/LafHacksLogo.png";
 
 export default function Team() {
   // this is a state hook! You don't need to use it to make cool websites
@@ -55,8 +58,42 @@ export default function Team() {
             <Box>
               <PersonCard
                 name="Claire"
-                imageSource={HelloKitty}
                 classYear="2023"
+                major="Computer Science"
+              />
+              <PersonCard
+                name="Josh"
+                classYear="2024"
+                major="Computer Science"
+              />
+              <PersonCard
+                name="Sakhi"
+                classYear="2024"
+                major="Computer Science and Bio"
+              />
+              <PersonCard
+                name="Sebs"
+                classYear="2024"
+                major="Computer Science and Theater"
+              />
+              <PersonCard
+                name="Katie"
+                classYear="2024"
+                major="Computer Science"
+              />
+              <PersonCard
+                name="Kizuki"
+                classYear="2024"
+                major="Computer Science and Econ"
+              />
+              <PersonCard
+                name="Cam"
+                classYear="2025"
+                major="Computer Science"
+              />
+              <PersonCard
+                name="Nathan "
+                classYear="2025"
                 major="Computer Science"
               />
             </Box>
